@@ -22,9 +22,13 @@ class TodoAdapter(
     }
 
     override fun onBindViewHolder(holder: TodoViewHolder, position: Int) {
+        val curTodo = todos[position]
+        holder.itemView.apply {
 
+        }
     }
 
+    // This will return the amount of Todo lists
     override fun getItemCount(): Int {
         return todos.size
     }

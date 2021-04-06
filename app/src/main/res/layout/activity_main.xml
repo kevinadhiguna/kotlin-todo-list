@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- add an id to RecyclerView with rv which stands for RecyclerView and followed by the functionality of the layout. The layout functionality here is TodoList. -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTodoItems"
         android:layout_width="match_parent"

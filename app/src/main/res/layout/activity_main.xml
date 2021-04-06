@@ -17,12 +17,14 @@
 
     <!-- Add Edit Text as field to enter to-do items -->
     <!-- 'android:hint' is to give a placeholder to an input -->
+    <!-- Make ' android:layout_width="0dp" ' so the width of input will be 100% (fill the gap).  -->
     <EditText
         android:id="@+id/etTodoTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Enter Todo Title"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddTodo"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button

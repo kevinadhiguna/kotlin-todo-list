@@ -24,6 +24,26 @@ class TodoAdapter(
         )
     }
 
+    // CREATE function
+    fun addTodo(todo: Todo) {
+        // Create a new todo list
+        todos.add(todo)
+
+        // Tell TodoAdapter that a new todo list has been inserted
+        notifyItemInserted(todos.size - 1)
+    }
+
+    // DELETE function
+    fun deleteDoneTodos() {
+        // delete all checked todo lists
+        todos.removeAll { todo ->
+            todo.isChecked
+        }
+
+        // Tell TodoAdapter that data has changed
+        notifyDataSetChanged()
+    }
+
     private fun toggleStrikeThrough(tvTodoTitle: TextView, isChecked: Boolean) {
         if (isChecked) {
             tvTodoTitle.paintFlags = tvTodoTitle.paintFlags or STRIKE_THRU_TEXT_FLAG

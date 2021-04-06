@@ -26,6 +26,6 @@ class TodoAdapter(
     }
 
     override fun getItemCount(): Int {
-
+        return todos.size
     }
 }

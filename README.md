@@ -6,4 +6,4 @@ A To-do List Android application powered by Kotlin
 
 <img src="https://s3.gifyu.com/images/kotlin-todolist.gif" height="500px" />
 
-[![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/to-do-lists)](https://github.com/kevinadhiguna)
+[![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/kotlin-todo-list)](https://github.com/kevinadhiguna)
